@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Velava Medical Coding Training Centre | Astro HealthCare Training Centre</title>
+  <meta name="description" content="Launch your career in the healthcare IT sector with certified training from Velava Medical Coding & Astro HealthCare Training Centre. Learn Anatomy, ICD-10-CM, CPT guidelines, and practice with real-time case sheets. Open to all graduates.">
+  <meta name="keywords" content="Medical Coding, Medical Coder Career, AAPC CPC Certification, ICD-10-CM, CPT Coding, Astro Healthcare Training, Velava Medical Coding, Healthcare IT jobs">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50,15 L20,80 L80,80 Z' fill='%230B2B5C'/%3E%3C/svg%3E">
+
+  <!-- FontAwesome Icons for modern UX -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo / Identity Reconstructed -->
+      <a href="#home" class="brand-logo-link" id="nav-brand">
+        <!-- High-Fidelity SVG Replication of Logo -->
+        <svg class="brand-logo-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#0B2B5C" />
+              <stop offset="100%" stop-color="#14A0DC" />
+            </linearGradient>
+            <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2E9E6B" />
+              <stop offset="100%" stop-color="#10B981" />
+            </linearGradient>
+          </defs>
+          <!-- Background circle guide -->
+          <circle cx="250" cy="250" r="230" fill="none" stroke="url(#blueGrad)" stroke-width="6" stroke-dasharray="8 6" opacity="0.6"/>
+          
+          <!-- Outer circular text guide line (partial blue arc) -->
+          <path d="M 80 250 A 170 170 0 1 1 420 250" fill="none" stroke="url(#blueGrad)" stroke-width="12" stroke-linecap="round"/>
+          <path d="M 420 250 A 170 170 0 0 1 80 250" fill="none" stroke="url(#greenGrad)" stroke-width="6" stroke-linecap="round"/>
+
+          <!-- Computer Monitor (Left) -->
+          <g transform="translate(60, 130) scale(0.7)">
+            <rect x="0" y="0" width="120" height="90" rx="10" fill="#fff" stroke="url(#blueGrad)" stroke-width="8"/>
+            <line x1="15" y1="20" x2="105" y2="20" stroke="url(#blueGrad)" stroke-width="6"/>
+            <line x1="15" y1="40" x2="70" y2="40" stroke="url(#blueGrad)" stroke-width="6"/>
+            <line x1="15" y1="60" x2="85" y2="60" stroke="url(#blueGrad)" stroke-width="6"/>
+            <!-- Small Green medical cross -->
+            <path d="M 95 40 L 95 60 M 85 50 L 105 50" stroke="url(#greenGrad)" stroke-width="6" stroke-linecap="round"/>
+            <!-- Monitor Stand -->
+            <path d="M 60 90 L 60 115 M 35 115 L 85 115" stroke="url(#blueGrad)" stroke-width="8" stroke-linecap="round"/>
+          </g>
+
+          <!-- Open Book with Heart & ECG (Right) -->
+          <g transform="translate(320, 130) scale(0.7)">
+            <!-- Left page -->
+            <path d="M 60 90 Q 30 75 0 90 L 0 20 Q 30 5 60 20 Z" fill="#fff" stroke="url(#blueGrad)" stroke-width="8" stroke-linejoin="round"/>
+            <!-- Right page -->
+            <path d="M 60 90 Q 90 75 120 90 L 120 20 Q 90 5 60 20 Z" fill="#fff" stroke="url(#blueGrad)" stroke-width="8" stroke-linejoin="round"/>
+            <!-- Heart shape & ECG -->
+            <path d="M 30 40 A 10 10 0 0 1 50 40 A 10 10 0 0 1 70 40 Q 60 60 30 75 Z" fill="none" stroke="url(#greenGrad)" stroke-width="4" transform="translate(30,-15) scale(0.6)"/>
+            <path d="M 15 50 L 35 50 L 40 30 L 45 70 L 50 45 L 55 55 L 75 50" fill="none" stroke="url(#greenGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <!-- Large center letter V -->
+          <path d="M 140 100 L 250 420 L 360 100" fill="none" stroke="url(#blueGrad)" stroke-width="46" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Inline feather accent inside V -->
+          <path d="M 320 120 L 250 360" fill="none" stroke="url(#greenGrad)" stroke-width="12" stroke-linecap="round"/>
+
+          <!-- Caduceus medical symbol centered -->
+          <g transform="translate(210, 80) scale(0.8)">
+            <!-- Staff -->
+            <line x1="50" y1="20" x2="50" y2="280" stroke="url(#blueGrad)" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="50" cy="15" r="14" fill="url(#blueGrad)"/>
+            
+            <!-- Wings -->
+            <path d="M 50 50 C -20 10 -10 90 50 90 C 110 90 120 10 50 50 Z" fill="url(#blueGrad)" opacity="0.85"/>
+            
+            <!-- Snakes wrapping around staff (Green and Blue) -->
+            <path d="M 20 100 Q 50 70 80 100 T 50 160 T 20 220 T 50 280" fill="none" stroke="url(#greenGrad)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M 80 100 Q 50 70 20 100 T 50 160 T 80 220 T 50 280" fill="none" stroke="url(#blueGrad)" stroke-width="6" stroke-linecap="round"/>
+          </g>
+        </svg>
+        <div class="brand-info">
+          <span class="brand-title">VELAVA</span>
+          <span class="brand-subtitle">Medical Coding</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#steps" class="nav-link">Steps</a>
+        <a href="#courses" class="nav-link">Courses</a>
+        <a href="#eligibility" class="nav-link">Eligibility</a>
+        <a href="#practice" class="nav-link">Practice</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Buttons & Hamburg -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Enroll Now</a>
+        
+        <!-- Hamburger (Mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <!-- Anniversary Day Ribbon Badge -->
+        <div class="badge badge-alt">
+          <i class="fa-solid fa-gift" style="color: var(--secondary)"></i> May 23: International Medical Coder Day
+        </div>
+        
+        <h1 class="hero-title">Become a Certified <br><span>Medical Coder</span></h1>
+        <p class="hero-description">
+          Medical Coding is one of the most stable and high-demand career options in the healthcare industry. Expand your career with global opportunities in hospitals, insurance companies, and healthcare IT firms.
+        </p>
+        
+        <div class="hero-ctas">
+          <a href="#courses" class="btn btn-secondary"><i class="fa-solid fa-graduation-cap"></i> Explore Courses</a>
+          <a href="#eligibility" class="btn btn-outline"><i class="fa-solid fa-clipboard-check"></i> Check Eligibility</a>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feat-item">
+            <span class="hero-feat-num" id="stat-placement">100%</span>
+            <span class="hero-feat-lbl">Placement Support</span>
+          </div>
+          <div class="hero-feat-item">
+            <span class="hero-feat-num" id="stat-courses">6+</span>
+            <span class="hero-feat-lbl">Core Modules</span>
+          </div>
+          <div class="hero-feat-item">
+            <span class="hero-feat-num" id="stat-experience">Live</span>
+            <span class="hero-feat-lbl">Case-Sheet Practice</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visuals -->
+      <div class="hero-graphic">
+        <div class="hero-image-wrapper">
+          <img src="assets/hero_medical_coding.png" alt="Medical coding training illustration showing diagnosis charts and digital workflow" width="500" height="400">
+        </div>
+        <!-- Micro-animated Live Indicator Badge -->
+        <div class="hero-glow-card">
+          <div class="hero-glow-circle"></div>
+          <span class="hero-glow-text">Astro Healthcare Branch Active</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ABOUT & CELEBRATION SECTION
+       ========================================== -->
+  <section class="section" id="about">
+    <div class="container">
+      
+      <div class="about-grid">
+        
+        <!-- Left: Celebration / Milestone Card -->
+        <div class="about-banner">
+          <span class="ann-date"><i class="fa-solid fa-calendar-days"></i> Special Announcement</span>
+          <h3 class="ann-title">Double Celebration! 🥳</h3>
+          <p class="ann-desc">
+            We started our new <strong>Astro HealthCare Training Centre</strong> on <strong>May 23</strong>, which is celebrated globally as <strong>International Medical Coder Day</strong>. We are committed to shaping the next generation of healthcare experts!
+          </p>
+          <hr style="opacity: 0.2; margin-bottom: 20px;">
+          <p style="font-size: 0.9rem; font-style: italic; opacity: 0.85;">
+            "We provide basic to advanced knowledge of Medical Coding to grow your career and secure your future in clinical coding systems."
+          </p>
+        </div>
+
+        <!-- Right: Detail Description -->
+        <div class="about-content">
+          <div class="badge">About Our Institution</div>
+          <h2 style="font-size: 2.2rem; margin-bottom: 20px; line-height: 1.2;">Your Gateway to the HealthCare IT Sector</h2>
+          <p style="color: var(--text-muted); margin-bottom: 25px;">
+            Whether you are a fresh graduate looking for a stable entry-level career or a working professional aiming to specialize, our training curriculum bridges the gap between medical terminology and international billing compliance.
+          </p>
+
+          <div class="about-bullets">
+            <div class="about-bullet-item">
+              <div class="about-bullet-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="about-bullet-content">
+                <h4>Industry Standard Certifications</h4>
+                <p>Prepare for globally recognized credentials like AAPC's CPC (Certified Professional Coder).</p>
+              </div>
+            </div>
+
+            <div class="about-bullet-item">
+              <div class="about-bullet-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="about-bullet-content">
+                <h4>Real Case Practice</h4>
+                <p>Gain hands-on coding training using actual, anonymous clinical documents and charts.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       STEPS TO BECOME A MEDICAL CODER
+       ========================================== -->
+  <section class="section section-alt" id="steps">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge badge-alt">Your Career Roadmap</div>
+        <h2>5 Steps to Become a Medical Coder</h2>
+        <p>A step-by-step guideline to kickstart your journey into clinical systems coding.</p>
+      </div>
+
+      <div class="steps-timeline">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-badge">1</div>
+          <h3>Education</h3>
+          <p>Complete your graduation (Science, Commerce, or Arts. Life Science is a bonus).</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-badge">2</div>
+          <h3>Specialization</h3>
+          <p>Choose your coding focus area: Outpatient, Inpatient, or Risk Adjustment.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-badge">3</div>
+          <h3>Training Course</h3>
+          <p>Enroll in Velava's professional courses to master coding rules and protocols.</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-badge">4</div>
+          <h3>Get Certified</h3>
+          <p>Clear the official certification exams (CPC, CCS, or COC exam panels).</p>
+        </div>
+        <!-- Step 5 -->
+        <div class="step-card">
+          <div class="step-badge">5</div>
+          <h3>Job Experience</h3>
+          <p>Join top healthcare IT companies, hospitals, and clinics via our placements.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       ELIGIBILITY CHECKER (INTERACTIVE)
+       ========================================== -->
+  <section class="section" id="eligibility">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge">Interactive Assessment</div>
+        <h2>Check Your Coding Eligibility</h2>
+        <p>Select your background and skills below to receive an instant suitability report.</p>
+      </div>
+
+      <div class="eligibility-container">
+        
+        <!-- Left: Interactive Checklist Options -->
+        <div class="eligibility-quiz">
+          <div class="quiz-group">
+            <div class="quiz-question-title"><i class="fa-solid fa-graduation-cap" style="color: var(--secondary); margin-right: 8px;"></i> What is your educational background?</div>
+            <div class="options-grid">
+              <div class="option-box" data-value="life-science" data-weight="35" onclick="toggleOption(this)">
+                <div class="option-checkbox"></div>
+                <span>Life Science Graduate (Nursing, Pharmacy, Bio, etc.)</span>
+              </div>
+              <div class="option-box" data-value="other-grad" data-weight="25" onclick="toggleOption(this)">
+                <div class="option-checkbox"></div>
+                <span>Other Graduate (Science, Commerce, Arts)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-group">
+            <div class="quiz-question-title"><i class="fa-solid fa-laptop" style="color: var(--secondary); margin-right: 8px;"></i> Do you have basic computer knowledge?</div>
+            <div class="options-grid">
+              <div class="option-box" data-value="comp-yes" data-weight="25" onclick="toggleOption(this)">
+                <div class="option-checkbox"></div>
+                <span>Yes, comfortable with MS Office and Web browsing</span>
+              </div>
+              <div class="option-box" data-value="comp-no" data-weight="5" onclick="toggleOption(this)">
+                <div class="option-checkbox"></div>
+                <span>No/Limited computer knowledge</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="quiz-group">
+            <div class="quiz-question-title"><i class="fa-solid fa-language" style="color: var(--secondary); margin-right: 8px;"></i> How are your English reading and comprehension skills?</div>
+            <div class="options-grid">
+              <div class="option-box" data-value="eng-good" data-weight="40" onclick="toggleOption(this)">
+                <div class="option-checkbox"></div>
+                <span>Good / Fluent (Read, understand medical notes)</span>
+              </div>
+              <div class="option-box" data-value="eng-basic" data-weight="20" onclick="toggleOption(this)">
+                <div class="option-checkbox"></div>
+                <span>Basic / Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Dynamic Results Sidebar -->
+        <div class="eligibility-card-sidebar">
+          <h3 class="sidebar-title">Your Report</h3>
+          
+          <div class="result-placeholder" id="quiz-result-box">
+            <div class="result-score" id="eligibility-score">0%</div>
+            <div class="result-badge" id="eligibility-badge">No Selection</div>
+            <p class="result-desc" id="eligibility-desc">
+              Select one option from each question category on the left to estimate your career fitment instantly.
+            </p>
+            <a href="#contact" class="btn btn-secondary" style="width: 100%; margin-top: 25px;"><i class="fa-solid fa-calendar-check"></i> Book Career Consultation</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       COURSE CURRICULUM SECTION
+       ========================================== -->
+  <section class="section section-alt" id="courses">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge badge-alt">Syllabus Overview</div>
+        <h2>What Our Training Includes</h2>
+        <p>A comprehensive study curriculum structured to match the expectations of professional medical audit exams.</p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Module 1 -->
+        <div class="course-card">
+          <div class="course-icon-banner">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Anatomy & Physiology</h3>
+            <p class="course-desc">Study the human skeletal, muscular, circulatory, and nervous systems. Crucial for understanding clinical diagnosis records.</p>
+            <div class="course-highlights">
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Systemic human anatomy</div>
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Pathological processes</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 2 -->
+        <div class="course-card">
+          <div class="course-icon-banner">
+            <i class="fa-solid fa-book-medical"></i>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Medical Terminology</h3>
+            <p class="course-desc">Master the roots, prefixes, suffixes, and anatomical terms used by doctors in daily clinical documentation.</p>
+            <div class="course-highlights">
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Suffixes and Prefixes</div>
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Diagnosis abbreviations</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 3 -->
+        <div class="course-card">
+          <div class="course-icon-banner">
+            <i class="fa-solid fa-file-medical"></i>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">ICD-10-CM Guidelines</h3>
+            <p class="course-desc">Understand the official guidelines for coding and reporting clinical diagnoses. Thorough learning of chapter-wise rules.</p>
+            <div class="course-highlights">
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Classification of diseases</div>
+              <div class="highlight-item"><div class="highlight-item-dot"></div> General coding rules</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 4 -->
+        <div class="course-card">
+          <div class="course-icon-banner">
+            <i class="fa-solid fa-hospital-user"></i>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">CPT & HCPCS Coding</h3>
+            <p class="course-desc">Learn to assign procedural codes for outpatient operations, clinic visits, laboratory tests, and healthcare materials/supplies.</p>
+            <div class="course-highlights">
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Evaluation & Management (E/M)</div>
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Modifiers usage</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 5 -->
+        <div class="course-card">
+          <div class="course-icon-banner">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Real-Time Case Sheets</h3>
+            <p class="course-desc">Apply your knowledge to evaluate dummy patient files. Convert medical summaries into code sequences exactly like an active workplace.</p>
+            <div class="course-highlights">
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Operative reports coding</div>
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Multi-specialty cases</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Module 6 -->
+        <div class="course-card">
+          <div class="course-icon-banner">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Compliance & Audits</h3>
+            <p class="course-desc">Study healthcare compliance standards, HIPAA regulations, fraud prevention, and validation auditing concepts.</p>
+            <div class="course-highlights">
+              <div class="highlight-item"><div class="highlight-item-dot"></div> HIPAA security guidelines</div>
+              <div class="highlight-item"><div class="highlight-item-dot"></div> Mock audit protocols</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE PRACTICE GAME (MICRO-LEARNING)
+       ========================================== -->
+  <section class="section" id="practice">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge">Interactive Simulation</div>
+        <h2>Real-Time Case Practice Arena</h2>
+        <p>Try your hand at clinical coding! Read the short doctor's note below and select the correct code choice.</p>
+      </div>
+
+      <div class="game-container">
+        
+        <!-- Game Header -->
+        <div class="game-header">
+          <div class="game-title-area">
+            <h3>Case Sheet Simulator</h3>
+            <p style="font-size: 0.85rem; opacity: 0.85; margin: 0;">Translate medical records to alphanumeric codes</p>
+          </div>
+          <div class="game-score-badge">
+            <i class="fa-solid fa-award"></i> Case: <span id="game-current-step">1</span>/3
+          </div>
+        </div>
+
+        <!-- Game Body -->
+        <div class="game-body">
+          <div class="game-case-box">
+            <div class="game-case-tag" id="case-category">DIAGNOSIS (ICD-10-CM)</div>
+            <div class="game-case-text" id="case-text">
+              "The patient presented with acute, severe lower right quadrant abdominal pain. Diagnostic ultrasound confirmed acute appendicitis, and the patient was immediately prepared for emergency surgical intervention."
+            </div>
+          </div>
+
+          <div class="game-question">Which ICD-10-CM code should you assign for this diagnosis?</div>
+          
+          <div class="game-options" id="game-options-container">
+            <!-- Dynamic Option Buttons -->
+            <button class="game-opt-btn" onclick="checkAnswer(this, 0)">
+              <span><strong>A. E11.9</strong> - Type 2 diabetes mellitus without complications</span>
+              <i class="fa-regular fa-circle"></i>
+            </button>
+            <button class="game-opt-btn" onclick="checkAnswer(this, 1)">
+              <span><strong>B. K35.80</strong> - Acute appendicitis, unspecified</span>
+              <i class="fa-regular fa-circle"></i>
+            </button>
+            <button class="game-opt-btn" onclick="checkAnswer(this, 2)">
+              <span><strong>C. J45.901</strong> - Unspecified asthma with acute exacerbation</span>
+              <i class="fa-regular fa-circle"></i>
+            </button>
+          </div>
+
+          <!-- Dynamic Feedback Area -->
+          <div class="game-feedback" id="game-feedback-box">
+            <h4 id="feedback-title" style="margin-bottom: 5px; font-weight: 700;">Correct!</h4>
+            <p id="feedback-desc" style="margin: 0; font-size: 0.95rem;">K35.80 is correct because the patient's primary diagnosis is acute appendicitis.</p>
+          </div>
+
+          <!-- Next Button -->
+          <div class="game-nav-footer">
+            <button class="btn btn-primary" id="btn-next-case" onclick="loadNextCase()" style="display: none;">Next Case <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="section section-alt">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge badge-alt">Success Stories</div>
+        <h2>Placed Candidates Feedback</h2>
+        <p>Read what our alumni say about their learning experience and career growth.</p>
+      </div>
+
+      <div class="testimonial-container">
+        
+        <div class="testimonial-card">
+          <p class="test-text">
+            Coming from a non-science background, I was nervous. Velava's step-by-step training in anatomy and ICD-10 made it very simple. I cleared my CPC exam on the first attempt!
+          </p>
+          <div class="test-user">
+            <div class="test-avatar-placeholder">SK</div>
+            <div class="test-user-info">
+              <h4>Senthil Kumar</h4>
+              <p>Certified Coder at Cognizant</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="test-text">
+            The real-time case sheet practice was the game changer. It simulated exactly how actual files look in the IT billing sector. The new branch launched on Coder day is a huge milestone!
+          </p>
+          <div class="test-user">
+            <div class="test-avatar-placeholder">AP</div>
+            <div class="test-user-info">
+              <h4>Anitha Priya</h4>
+              <p>Junior Executive at Vee Technologies</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="test-text">
+            Excellent coaching. The teachers pay attention to coding compliance rules. Highly recommended for freshers looking for standard, secure jobs in healthcare.
+          </p>
+          <div class="test-user">
+            <div class="test-avatar-placeholder">RV</div>
+            <div class="test-user-info">
+              <h4>Rishi Verma</h4>
+              <p>Medical Coder at Omega Healthcare</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & INQUIRY FORM
+       ========================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+      
+      <div class="inquiry-grid">
+        
+        <!-- Left: Quick Info -->
+        <div class="inquiry-info">
+          <div class="badge">Get in Touch</div>
+          <h3>Start Your Journey Today</h3>
+          <p style="color: var(--text-muted);">
+            Have questions about fees, eligibility, syllabus, or batch timings? Fill out the form, and our coordinator will call you back within 24 hours.
+          </p>
+
+          <div class="contact-channels">
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-details">
+                <h4>Call or WhatsApp</h4>
+                <p>+91 94444 88888</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email Admissions</h4>
+                <p>admissions@velavamc.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form Card -->
+        <div class="inquiry-form-card">
+          <form id="inquiryForm" onsubmit="handleInquirySubmit(event)">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentName">Full Name <span style="color:var(--danger)">*</span></label>
+                <input type="text" class="form-control" id="studentName" placeholder="Enter your name" required>
+                <div class="form-error" id="nameError">Name is required.</div>
+              </div>
+              
+              <div class="form-group">
+                <label for="studentPhone">Phone Number <span style="color:var(--danger)">*</span></label>
+                <input type="tel" class="form-control" id="studentPhone" placeholder="10-digit mobile number" required>
+                <div class="form-error" id="phoneError">Valid 10-digit number is required.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="studentEmail">Email Address <span style="color:var(--danger)">*</span></label>
+              <input type="email" class="form-control" id="studentEmail" placeholder="Enter email" required>
+              <div class="form-error" id="emailError">Please enter a valid email.</div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="studentDegree">Educational Stream</label>
+                <select class="form-control" id="studentDegree">
+                  <option value="Life Science Graduate">Life Science Graduate</option>
+                  <option value="Non-Science Graduate">Non-Science Graduate (Commerce/Arts/Engg)</option>
+                  <option value="Working Professional">Working Professional</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="studentBatch">Preferred Batch</label>
+                <select class="form-control" id="studentBatch">
+                  <option value="Weekday Regular">Weekday Regular (Mon-Fri)</option>
+                  <option value="Weekend Special">Weekend Special (Sat-Sun)</option>
+                  <option value="Online Self-Paced">Online Self-Paced Training</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="studentMessage">Message or Questions</label>
+              <textarea class="form-control" id="studentMessage" rows="3" placeholder="Tell us about yourself or ask a question..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" style="width: 100%; font-size: 1rem;"><i class="fa-solid fa-paper-plane"></i> Send Inquiry Details</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="footer-brand-title">VELAVA & ASTRO <br><span style="font-size: 0.8rem; letter-spacing: 0.1em; color: var(--secondary);">HEALTHCARE TRAINING CENTRE</span></div>
+          <p style="font-size: 0.9rem; line-height: 1.6;">
+            We offer premium, job-oriented coaching in medical coding compliance and clinical auditing procedures.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://wa.me/919444488888" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 style="margin-bottom: 20px; font-size: 1.1rem; border-left: 3px solid var(--secondary); padding-left: 10px;">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#steps">Steps Timeline</a></li>
+            <li><a href="#courses">Our Syllabus</a></li>
+            <li><a href="#eligibility">Check Eligibility</a></li>
+            <li><a href="#practice">Practice Arena</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Contact details -->
+        <div>
+          <h4 style="margin-bottom: 20px; font-size: 1.1rem; border-left: 3px solid var(--secondary); padding-left: 10px;">Contact Details</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-location-dot" style="color: var(--secondary)"></i>
+              <span>
+                <strong>Velava Coding Training</strong><br>
+                12, Medical Plaza, Hospital Road,<br>
+                Chennai, Tamil Nadu, India
+              </span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-phone" style="color: var(--secondary)"></i>
+              <span>+91 94444 88888</span>
+            </li>
+            <li class="footer-contact-item">
+              <i class="fa-solid fa-envelope" style="color: var(--secondary)"></i>
+              <span>info@velavamedicalcoding.com</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Velava Medical Coding Training & Astro HealthCare Training. All rights reserved.</p>
+        <p>Design & Developed by Antigravity AI</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/919444488888" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================
+       SUCCESS MODAL POPUP
+       ========================================== -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+      <div class="modal-success-icon">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 id="modal-title">Inquiry Submitted!</h3>
+      <p id="modal-desc">Thank you for contacting us. Our course counselor will contact you shortly with batch and pricing details.</p>
+      <button class="btn btn-secondary" onclick="closeModal()" style="width: 100%;">Got It</button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
