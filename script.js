@@ -16,7 +16,8 @@ function initNavbar() {
   const header = document.getElementById('header');
   const hamburger = document.getElementById('hamburger');
   const navMenu = document.getElementById('nav-menu');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const navLinks = document.querySelectorAll('.nav-link, .nav-mobile-enroll');
+  const overlay = document.getElementById('nav-overlay');
 
   // Change navbar appearance on scroll
   window.addEventListener('scroll', () => {
@@ -30,8 +31,10 @@ function initNavbar() {
 
   // Toggle mobile menu
   hamburger.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
     hamburger.classList.toggle('active');
-    navMenu.classList.toggle('open');
+    if (overlay) overlay.classList.toggle('active', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
   // Close mobile menu when clicking a link
@@ -39,8 +42,20 @@ function initNavbar() {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
       navMenu.classList.remove('open');
+      if (overlay) overlay.classList.remove('active');
+      document.body.style.overflow = '';
     });
   });
+
+  // Close mobile menu when clicking on the overlay backdrop
+  if (overlay) {
+    overlay.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      navMenu.classList.remove('open');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
 
   // Highlight active link based on scroll position
   function highlightNavLink() {
@@ -435,8 +450,8 @@ function handleInquirySubmit(event) {
   localStorage.setItem('inquiries', JSON.stringify(inquiries));
 
   // Construct WhatsApp text message
-  const whatsappNumber = '919942101990';
-  const whatsappMsg = `*New Admission Inquiry - Velava & Astro Healthcare*
+  const whatsappNumber = '918344768752';
+  const whatsappMsg = `*New Admission Inquiry - Velava Medical Coding*
 ---------------------------------------
 *Name:* ${inquiry.name}
 *Phone:* ${inquiry.phone}

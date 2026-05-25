@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO Meta Tags -->
-  <title>Velava Medical Coding Training Centre | Astro HealthCare Training Centre</title>
-  <meta name="description" content="Launch your career in the healthcare IT sector with certified training from Velava Medical Coding & Astro HealthCare Training Centre. Learn Anatomy, ICD-10-CM, CPT guidelines, and practice with real-time case sheets. Open to all graduates.">
-  <meta name="keywords" content="Medical Coding, Medical Coder Career, AAPC CPC Certification, ICD-10-CM, CPT Coding, Astro Healthcare Training, Velava Medical Coding, Healthcare IT jobs">
+  <title>Velava Medical Coding Training Centre</title>
+  <meta name="description" content="Launch your career in the healthcare IT sector with certified training from Velava Medical Coding. Learn Anatomy, ICD-10-CM, CPT guidelines, and practice with real-time case sheets. Open to all graduates.">
+  <meta name="keywords" content="Medical Coding, Medical Coder Career, AAPC CPC Certification, ICD-10-CM, CPT Coding, Velava Medical Coding, Healthcare IT jobs">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50,15 L20,80 L80,80 Z' fill='%230B2B5C'/%3E%3C/svg%3E">
@@ -19,6 +19,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <!-- Mobile Menu Backdrop Overlay -->
+  <div class="nav-overlay" id="nav-overlay"></div>
 
   <!-- ==========================================
        HEADER & NAVIGATION
@@ -104,6 +107,7 @@
         <a href="#eligibility" class="nav-link">Eligibility</a>
         <a href="#practice" class="nav-link">Practice</a>
         <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary nav-mobile-enroll">Enroll Now</a>
       </nav>
 
       <!-- Action Buttons & Hamburg -->
@@ -112,7 +116,7 @@
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-moon" id="theme-icon"></i>
         </button>
-        <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.85rem;">Enroll Now</a>
+        <a href="#contact" class="btn btn-primary nav-desktop-enroll" style="padding: 10px 20px; font-size: 0.85rem;">Enroll Now</a>
         
         <!-- Hamburger (Mobile) -->
         <button class="hamburger" id="hamburger" aria-label="Open menu">
@@ -150,11 +154,7 @@
 
         <div class="hero-features">
           <div class="hero-feat-item">
-            <span class="hero-feat-num" id="stat-placement">100%</span>
-            <span class="hero-feat-lbl">Placement Support</span>
-          </div>
-          <div class="hero-feat-item">
-            <span class="hero-feat-num" id="stat-courses">6+</span>
+            <span class="hero-feat-num" id="stat-courses">3</span>
             <span class="hero-feat-lbl">Core Modules</span>
           </div>
           <div class="hero-feat-item">
@@ -172,7 +172,7 @@
         <!-- Micro-animated Live Indicator Badge -->
         <div class="hero-glow-card">
           <div class="hero-glow-circle"></div>
-          <span class="hero-glow-text">Astro Healthcare Branch Active</span>
+          <span class="hero-glow-text">Velava Medical Coding Active</span>
         </div>
       </div>
 
@@ -192,7 +192,7 @@
           <span class="ann-date"><i class="fa-solid fa-calendar-days"></i> Special Announcement</span>
           <h3 class="ann-title">Double Celebration! 🥳</h3>
           <p class="ann-desc">
-            We started our new <strong>Astro HealthCare Training Centre</strong> on <strong>May 23</strong>, which is celebrated globally as <strong>International Medical Coder Day</strong>. We are committed to shaping the next generation of healthcare experts!
+            We started our new <strong>Velava Medical Coding Training Centre</strong> on <strong>May 23</strong>, which is celebrated globally as <strong>International Medical Coder Day</strong>. We are committed to shaping the next generation of healthcare experts!
           </p>
           <hr style="opacity: 0.2; margin-bottom: 20px;">
           <p style="font-size: 0.9rem; font-style: italic; opacity: 0.85;">
@@ -208,23 +208,6 @@
             Whether you are a fresh graduate looking for a stable entry-level career or a working professional aiming to specialize, our training curriculum bridges the gap between medical terminology and international billing compliance.
           </p>
 
-          <div class="about-bullets">
-            <div class="about-bullet-item">
-              <div class="about-bullet-icon"><i class="fa-solid fa-shield-halved"></i></div>
-              <div class="about-bullet-content">
-                <h4>Industry Standard Certifications</h4>
-                <p>Prepare for globally recognized credentials like AAPC's CPC (Certified Professional Coder).</p>
-              </div>
-            </div>
-
-            <div class="about-bullet-item">
-              <div class="about-bullet-icon"><i class="fa-solid fa-code"></i></div>
-              <div class="about-bullet-content">
-                <h4>Real Case Practice</h4>
-                <p>Gain hands-on coding training using actual, anonymous clinical documents and charts.</p>
-              </div>
-            </div>
-          </div>
         </div>
 
       </div>
@@ -240,7 +223,7 @@
       
       <div class="section-header">
         <div class="badge badge-alt">Your Career Roadmap</div>
-        <h2>5 Steps to Become a Medical Coder</h2>
+        <h2>4 Steps to Become a Medical Coder</h2>
         <p>A step-by-step guideline to kickstart your journey into clinical systems coding.</p>
       </div>
 
@@ -266,12 +249,6 @@
         <!-- Step 4 -->
         <div class="step-card">
           <div class="step-badge">4</div>
-          <h3>Get Certified</h3>
-          <p>Clear the official certification exams (CPC, CCS, or COC exam panels).</p>
-        </div>
-        <!-- Step 5 -->
-        <div class="step-card">
-          <div class="step-badge">5</div>
           <h3>Job Experience</h3>
           <p>Join top healthcare IT companies, hospitals, and clinics via our placements.</p>
         </div>
@@ -416,50 +393,6 @@
           </div>
         </div>
 
-        <!-- Module 4 -->
-        <div class="course-card">
-          <div class="course-icon-banner">
-            <i class="fa-solid fa-hospital-user"></i>
-          </div>
-          <div class="course-body">
-            <h3 class="course-title">CPT & HCPCS Coding</h3>
-            <p class="course-desc">Learn to assign procedural codes for outpatient operations, clinic visits, laboratory tests, and healthcare materials/supplies.</p>
-            <div class="course-highlights">
-              <div class="highlight-item"><div class="highlight-item-dot"></div> Evaluation & Management (E/M)</div>
-              <div class="highlight-item"><div class="highlight-item-dot"></div> Modifiers usage</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Module 5 -->
-        <div class="course-card">
-          <div class="course-icon-banner">
-            <i class="fa-solid fa-magnifying-glass-chart"></i>
-          </div>
-          <div class="course-body">
-            <h3 class="course-title">Real-Time Case Sheets</h3>
-            <p class="course-desc">Apply your knowledge to evaluate dummy patient files. Convert medical summaries into code sequences exactly like an active workplace.</p>
-            <div class="course-highlights">
-              <div class="highlight-item"><div class="highlight-item-dot"></div> Operative reports coding</div>
-              <div class="highlight-item"><div class="highlight-item-dot"></div> Multi-specialty cases</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Module 6 -->
-        <div class="course-card">
-          <div class="course-icon-banner">
-            <i class="fa-solid fa-clipboard-check"></i>
-          </div>
-          <div class="course-body">
-            <h3 class="course-title">Compliance & Audits</h3>
-            <p class="course-desc">Study healthcare compliance standards, HIPAA regulations, fraud prevention, and validation auditing concepts.</p>
-            <div class="course-highlights">
-              <div class="highlight-item"><div class="highlight-item-dot"></div> HIPAA security guidelines</div>
-              <div class="highlight-item"><div class="highlight-item-dot"></div> Mock audit protocols</div>
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
@@ -614,7 +547,7 @@
               <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
               <div class="contact-details">
                 <h4>Call or WhatsApp</h4>
-                <p>+91 94444 88888</p>
+                <p><a href="tel:+918344768752">+91 83447 68752</a></p>
               </div>
             </div>
 
@@ -622,7 +555,7 @@
               <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
               <div class="contact-details">
                 <h4>Email Admissions</h4>
-                <p>admissions@velavamc.com</p>
+                <p><a href="mailto:sundarvelavamc@gmail.com">sundarvelavamc@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -684,6 +617,11 @@
 
       </div>
 
+      <!-- Google Maps Embed Block -->
+      <div class="contact-map-container" style="margin-top: 50px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); line-height: 0; border: 1px solid rgba(11, 43, 92, 0.08);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3959.563521226604!2d77.83084117505378!3d11.575541788625953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDM0JzMyLjAiTiA3N8KwNTAnMDAuMyJF!5e1!3m2!1sen!2sin!4v1779720312105!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
     </div>
   </section>
 
@@ -697,7 +635,7 @@
         
         <!-- Col 1: Brand Info -->
         <div class="footer-brand">
-          <div class="footer-brand-title">VELAVA & ASTRO <br><span style="font-size: 0.8rem; letter-spacing: 0.1em; color: var(--secondary);">HEALTHCARE TRAINING CENTRE</span></div>
+          <div class="footer-brand-title">VELAVA <br><span style="font-size: 0.8rem; letter-spacing: 0.1em; color: var(--secondary);">MEDICAL CODING</span></div>
           <p style="font-size: 0.9rem; line-height: 1.6;">
             We offer premium, job-oriented coaching in medical coding compliance and clinical auditing procedures.
           </p>
@@ -705,7 +643,7 @@
             <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://wa.me/919444488888" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://wa.me/918344768752" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
 
@@ -730,17 +668,17 @@
               <i class="fa-solid fa-location-dot" style="color: var(--secondary)"></i>
               <span>
                 <strong>Velava Coding Training</strong><br>
-                12, Medical Plaza, Hospital Road,<br>
-                Chennai, Tamil Nadu, India
+                196/D 2, Old Edappadi, Lake Road,<br>
+                Edapady, Salem, Tamil Nadu - 637101
               </span>
             </li>
             <li class="footer-contact-item">
               <i class="fa-solid fa-phone" style="color: var(--secondary)"></i>
-              <span>+91 94444 88888</span>
+              <span><a href="tel:+918344768752">+91 83447 68752</a></span>
             </li>
             <li class="footer-contact-item">
               <i class="fa-solid fa-envelope" style="color: var(--secondary)"></i>
-              <span>info@velavamedicalcoding.com</span>
+              <span><a href="mailto:sundarvelavamc@gmail.com">sundarvelavamc@gmail.com</a></span>
             </li>
           </ul>
         </div>
@@ -749,7 +687,7 @@
 
       <!-- Footer Bottom -->
       <div class="footer-bottom">
-        <p>&copy; 2026 Velava Medical Coding Training & Astro HealthCare Training. All rights reserved.</p>
+        <p>&copy; 2026 Velava Medical Coding Training. All rights reserved.</p>
         <p>Design & Developed by Antigravity AI</p>
       </div>
 
@@ -757,7 +695,7 @@
   </footer>
 
   <!-- Floating WhatsApp Action -->
-  <a href="https://wa.me/919444488888" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/918344768752" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
 
