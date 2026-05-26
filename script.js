@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initEligibilityQuiz();
   initCodingGame();
+  initScrollReveal();
 });
 
 /* ==========================================================================
@@ -487,4 +488,32 @@ function closeModal() {
   setTimeout(() => {
     modal.style.display = 'none';
   }, 300);
+}
+
+/* ==========================================================================
+   SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+   ========================================================================== */
+function initScrollReveal() {
+  const revealItems = document.querySelectorAll('.reveal-item');
+  
+  if (!revealItems.length) return;
+
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  revealItems.forEach(item => {
+    observer.observe(item);
+  });
 }
