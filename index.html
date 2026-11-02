@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2.5">
 </head>
 <body>
   
@@ -106,6 +106,7 @@
         <a href="#courses" class="nav-link">Courses</a>
         <a href="#eligibility" class="nav-link">Eligibility</a>
         <a href="#services" class="nav-link">Services</a>
+        <a href="#store" class="nav-link nav-link-store"><i class="fa-solid fa-store" style="color:var(--secondary);"></i> Store <span class="nav-pill-offer">Offers</span></a>
         <a href="#practice" class="nav-link">Practice</a>
         <a href="#contact" class="nav-link">Contact</a>
         <a href="#contact" class="btn btn-primary nav-mobile-enroll">Enroll Now</a>
@@ -113,6 +114,11 @@
 
       <!-- Action Buttons & Hamburg -->
       <div class="nav-actions">
+        <!-- Cart Button -->
+        <button class="cart-nav-btn" id="cartNavBtn" onclick="toggleCartDrawer()" aria-label="Shopping Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-badge-count" id="cartNavCount">0</span>
+        </button>
         <!-- Theme Toggle -->
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-moon" id="theme-icon"></i>
@@ -494,6 +500,73 @@
   </section>
 
   <!-- ==========================================
+       VELAVA MEDICAL PRODUCTS STORE (E-COMMERCE)
+       ========================================== -->
+  <section class="section" id="store">
+    <div class="container">
+      
+      <div class="section-header">
+        <div class="badge badge-secondary"><i class="fa-solid fa-tag"></i> Special Offer Prices</div>
+        <h2>Velava Medical & Healthcare Store</h2>
+        <p>Order authentic medicines, BP monitors, diabetes glucose kits, thermometers, surgical devices & wellness supplies directly online.</p>
+      </div>
+
+      <!-- Store Controls: Live Category Filter Tabs & Search Bar -->
+      <div class="store-controls-wrap">
+        <div class="store-category-pills" id="storeCategoryPills">
+          <button class="cat-pill active" onclick="filterStoreCategory('all', this)"><i class="fa-solid fa-border-all"></i> All Products</button>
+          <button class="cat-pill offer-pill" onclick="filterStoreOffers(this)"><i class="fa-solid fa-fire"></i> Special Offers</button>
+          <button class="cat-pill" onclick="filterStoreCategory('Medical & Surgical Devices', this)"><i class="fa-solid fa-heart-pulse"></i> Devices & Monitors</button>
+          <button class="cat-pill" onclick="filterStoreCategory('Medicines & Pharmacy', this)"><i class="fa-solid fa-prescription-bottle-medical"></i> Medicines</button>
+          <button class="cat-pill" onclick="filterStoreCategory('Nutrition & Wellness', this)"><i class="fa-solid fa-apple-whole"></i> Nutrition & Wellness</button>
+          <button class="cat-pill" onclick="filterStoreCategory('Personal & Mother Care', this)"><i class="fa-solid fa-hand-holding-medical"></i> Personal Care</button>
+          <button class="cat-pill" onclick="filterStoreCategory('First Aid & Emergency', this)"><i class="fa-solid fa-kit-medical"></i> First Aid</button>
+        </div>
+
+        <div class="store-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="storeSearchInput" placeholder="Search medicines, BP monitors, wellness items..." oninput="searchStoreProducts(this.value)">
+          <button class="clear-search-btn" id="clearSearchBtn" onclick="clearStoreSearch()" style="display:none;"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+
+      <!-- Dynamic Products Grid -->
+      <div class="store-products-grid" id="storeProductsGrid">
+        <div class="store-loading-state">
+          <i class="fa-solid fa-spinner fa-spin"></i>
+          <p>Loading medical products & latest offer discounts...</p>
+        </div>
+      </div>
+
+      <!-- Trust Badges & Guarantee Row -->
+      <div class="store-perks-row">
+        <div class="store-perk-item">
+          <i class="fa-solid fa-shield-virus"></i>
+          <div>
+            <strong>100% Genuine Healthcare Products</strong>
+            <p>Direct from certified pharmacy & medical distributors</p>
+          </div>
+        </div>
+        <div class="store-perk-item">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div>
+            <strong>Prompt Local Delivery</strong>
+            <p>Fast doorstep delivery & local pharmacy pickup available</p>
+          </div>
+        </div>
+        <div class="store-perk-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <strong>Direct WhatsApp Ordering</strong>
+            <p>1-Click instant order confirmation with our pharmacist</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
        INTERACTIVE PRACTICE GAME (MICRO-LEARNING)
        ========================================== -->
   <section class="section" id="practice">
@@ -752,6 +825,7 @@
             <li><a href="#courses">Our Syllabus</a></li>
             <li><a href="#eligibility">Check Eligibility</a></li>
             <li><a href="#services">Other Services</a></li>
+            <li><a href="#store">Medical Store & Offers</a></li>
             <li><a href="#practice">Practice Arena</a></li>
           </ul>
         </div>
@@ -784,7 +858,7 @@
       <!-- Footer Bottom -->
       <div class="footer-bottom">
         <p>&copy; 2026 Velava Medical Coding Training. All rights reserved.</p>
-        <p>Design & Developed by Antigravity AI</p>
+        <p>Design & Developed by Antigravity AI &bull; <a href="admin.php" target="_blank" style="color:rgba(255,255,255,0.75);text-decoration:none;"><i class="fa-solid fa-user-gear"></i> Admin Portal</a></p>
       </div>
 
     </div>
@@ -809,7 +883,65 @@
     </div>
   </div>
 
+  <!-- Floating Cart Trigger Button -->
+  <div class="floating-cart-trigger" id="floatingCartBtn" onclick="toggleCartDrawer()">
+    <div class="floating-cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span class="floating-cart-count" id="floatingCartCount">0</span>
+    </div>
+    <span class="floating-cart-label">Cart</span>
+  </div>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cartOverlay" onclick="toggleCartDrawer()"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Medical Order Cart</h3>
+        <span class="cart-items-count-badge" id="cartDrawerBadge">0 Items</span>
+      </div>
+      <button class="cart-close-btn" onclick="toggleCartDrawer()">&times;</button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList">
+      <div class="cart-empty-state">
+        <i class="fa-solid fa-cart-plus"></i>
+        <p>Your shopping cart is empty</p>
+        <button class="btn btn-primary btn-sm" onclick="toggleCartDrawer()">Browse Store</button>
+      </div>
+    </div>
+
+    <div class="cart-drawer-footer" id="cartFooter" style="display: none;">
+      <div class="cart-price-summary">
+        <div class="summary-line">
+          <span>Subtotal (MRP)</span>
+          <span id="cartSubtotal">₹0.00</span>
+        </div>
+        <div class="summary-line summary-discount">
+          <span>Total Offer Savings</span>
+          <span id="cartDiscount">-₹0.00</span>
+        </div>
+        <div class="summary-line summary-total">
+          <span>Final Amount</span>
+          <span id="cartTotal">₹0.00</span>
+        </div>
+      </div>
+
+      <div class="cart-customer-fields">
+        <input type="text" id="custName" class="cart-input" placeholder="Your Name *">
+        <input type="tel" id="custPhone" class="cart-input" placeholder="Phone Number *">
+        <textarea id="custAddress" class="cart-input" rows="2" placeholder="Delivery Address / City..."></textarea>
+      </div>
+
+      <button class="btn-whatsapp-checkout" onclick="checkoutViaWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> Proceed to Order on WhatsApp
+      </button>
+      <p class="cart-guarantee"><i class="fa-solid fa-shield-halved"></i> Direct bill with Velava Pharmacy (+91 95003 71616)</p>
+    </div>
+  </aside>
+
   <!-- Main JavaScript File -->
-  <script src="script.js"></script>
+  <script src="script.js?v=2.5"></script>
 </body>
 </html>
