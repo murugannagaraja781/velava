@@ -8,7 +8,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Configured Super Admin Password
-define('ADMIN_PASSWORD', 'aGreen@2026a');
+define('ADMIN_PASSWORD', 'Admin@2026');
 
 function isAdminLoggedIn() {
     return isset($_SESSION['velava_admin_logged_in']) && $_SESSION['velava_admin_logged_in'] === true;
